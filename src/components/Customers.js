@@ -15,6 +15,7 @@ function Customers({customers, onUpdateCustomer}) {
   })
 
 // when PATCH request happens; auto-hides the form, pushes changes to display
+/* eslint-disable no-unused-vars */
   function handleCustomerUpdate(updatedCustomer) {
       setIsEditing(false);
       onUpdateCustomer(updatedCustomer);
