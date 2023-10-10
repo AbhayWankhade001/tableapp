@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Customer from './Customer'
+import Customer from './Customer.js'
 // import EditCustomer from './EditCustomer'
 
 function Customers({customers, onUpdateCustomer}) {
@@ -48,12 +48,7 @@ function Customers({customers, onUpdateCustomer}) {
 
   return (
       <div>
-        {/* {isEditing?
-          (<EditCustomer
-            editForm={editForm}
-            handleChange={handleChange}
-            handleCustomerUpdate={handleCustomerUpdate}
-          />) : null} */}
+    
         <table id='students'className='madeit'>
           <thead>
             <tr className='makeitcolor'>
@@ -68,8 +63,8 @@ function Customers({customers, onUpdateCustomer}) {
           <tbody>
               { customers.map(customer =>
                 <Customer
-                  key={customer.id}
-                  customer={customer}
+                key={customer.id}
+                customer={customer}
                 
                 />) }
              

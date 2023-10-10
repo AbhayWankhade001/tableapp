@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Customers from "./components/Customers";
+import Customers from "./components/Customers.js";
+
 import "./App.css";
 function App() {
 // set state
